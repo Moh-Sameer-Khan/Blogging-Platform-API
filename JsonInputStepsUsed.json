@@ -1,0 +1,279 @@
+// ########### Here i'm showing all steps who i Used
+
+// ############### Step -- 1 -- Sign-Up -- User Class --> add one row in user table
+// 1.
+{
+    "userName": "Sameer",
+    "userHandle": "sameer123",
+    "userBio": "Developer",
+    "userEmail": "sameer@blogsuser.com",
+    "userPassword": "Sameer@123",
+    "gender": "MALE",
+    "accountType": "PUBLIC"
+}
+
+// 2-----
+{
+    "userName": "Faisal",
+    "userHandle": "faisal123",
+    "userBio": "Python Developer",
+    "userEmail": "faisal@blogsuser.com",
+    "userPassword": "Faisal@123",
+    "gender": "MALE",
+    "accountType": "PUBLIC"
+}
+
+// 3.----
+{
+    "userName": "Saif",
+    "userHandle": "saif123",
+    "userBio": "Java Developer",
+    "userEmail": "saif@blogsuser.com",
+    "userPassword": "Saif@123",
+    "gender": "MALE",
+    "accountType": "PUBLIC"
+  }
+
+//   4.-------
+{
+    "userName": "Riya",
+    "userHandle": "riya123",
+    "userBio": "HR",
+    "userEmail": "riya@blogsuser.com",
+    "userPassword": "riya@123",
+    "gender": "FEMALE",
+    "accountType": "PRIVATE"
+}
+
+// 5----
+{
+    "userName": "Soniya",
+    "userHandle": "soniya123",
+    "userBio": "HR Recruiter",
+    "userEmail": "soniya@blogsuser.com",
+    "userPassword": "Soniya@123",
+    "gender": "FEMALE",
+    "accountType": "PUBLIC"
+}
+
+// ############### Step -- 2 -- Sign-IN -- User Class --> add one row in Token table
+// Token OTP sent on gmail 
+
+// 1.
+{
+    "email": "sameer@blogsuser.com",
+    "password": "Sameer@123"
+}
+
+// 2..--
+{
+    "email": "soniya@blogsuser.com",
+    "password": "Soniya@123"
+}
+
+// 3. ----
+{
+    "email": "riya@blogsuser.com",
+    "password": "riya@123"
+}
+
+// 4..
+{
+    "email": "faisal@blogsuser.com",
+    "password": "Faisal@123"
+}
+
+// ############### Step -- 3 -- Sign-OUT -- User Class --> delete one row from Token table
+{
+    "email": "sameer@blogsuser.com",
+    "token": "7c127397-f1cc-4d18-8ce6-b4052d1f9a53"
+}
+
+
+// ############### Step -- 4 -- Post Blog -- User Class -->  one row Add in Post table
+// A--************
+// pass signin user email --> faisal@blogsuser.com
+// and token value --> 99f7e18d-52b7-4286-a88e-4bcbfaa1c81b
+// 1 --
+{
+    "postContent": "Nature",
+    "postTitle": "Evening Time!!",
+    "postCaption": "Hi guys",
+    "postLocation": "Kerala",
+    "postType": "IMAGE"
+}
+
+// 2
+{
+    "postContent": "Video",
+    "postTitle": "Morning Time!!",
+    "postCaption": "Hi guys, Good Morning",
+    "postLocation": "Bangalore",
+    "postType": "VIDEO"
+}
+// 3
+{
+    "postContent": "My Pic",
+    "postTitle": "Enjoy!!",
+    "postCaption": "Hi guys, It's fun time",
+    "postLocation": "Hapur",
+    "postType": "IMAGE"
+}
+
+// B************
+// pass signin user email --> soniya@blogsuser.com
+// and token value --> a5a51ad9-b48b-4653-915a-5fa8d622451d
+{
+    "postContent": "Queen",
+    "postTitle": "Enjoy!!",
+    "postCaption": "Hi guys , Swag",
+    "postLocation": "Noida",
+    "postType": "FASHION"
+  }
+// 2--
+{
+    "postContent": "My Mom",
+    "postTitle": "Love!!",
+    "postCaption": "My Life",
+    "postLocation": "Kolkata",
+    "postType": "IMAGE"
+}
+
+// C---************
+// pass signin user email --> riya@blogsuser.com
+// and token value --> b3e40686-e9e1-474e-bb94-189835bb6d7f
+{
+    "postContent": "My Dad",
+    "postTitle": "Love You Dad!!",
+    "postCaption": "My Life",
+    "postLocation": "Delhi",
+    "postType": "VIDEO"
+}
+
+// ############### Step -- 5 -- Delte post -- User Class --> delete one row from Post table
+// first put invalid post, wrong email, wrong token
+// Pass post id -- 3
+// pass email who sign in --> faisal@blogsuser.com
+// pass token that user --> 99f7e18d-52b7-4286-a88e-4bcbfaa1c81b
+
+
+// ############### Step -- 6 -- Comment Post -- User Class -->  one row Add in Comment table
+// A---------
+// eamil -->riya@blogsuser.com
+// token--> b3e40686-e9e1-474e-bb94-189835bb6d7f
+// 1---
+{
+    "commentBody": "Beautiful View",
+    "blogPost": {
+      "postId": 4
+    }
+}
+
+// 2--
+{
+    "commentBody": "Looking Beautiful",
+    "blogPost": {
+      "postId": 4
+    }
+}
+
+// B---------
+// eamil --> faisal@blogsuser.com
+// token--> 99f7e18d-52b7-4286-a88e-4bcbfaa1c81b
+{
+    "commentBody": "Mashallah!!",
+    "blogPost": {
+      "postId": 6
+    }
+}
+
+// ############### Step -- 7 -- Delete Commnet -- User Class --> delete one row from Comment table
+// first put invalid post, wrong email, wrong token
+// Pass Comment id -- 2 wo hi delte kar sakta jo user user h like instagram jiska account hai
+{
+    "email": "riya@blogsuser.com",
+    "token": "b3e40686-e9e1-474e-bb94-189835bb6d7f"
+}
+
+// ############### Step -- 8 -- follow -- User Class -->  one row Add in Follow table
+// 1----------
+follower email --> faisal@blogsuser.com
+follower token --> 99f7e18d-52b7-4286-a88e-4bcbfaa1c81b
+// 1
+{
+    "currentUser": {
+      "userId": 1
+    },
+    "currentUserFollower": {
+      "userId":2 
+    }
+}
+
+// 2-----------
+follower email --> riya@blogsuser.com
+follower token --> b3e40686-e9e1-474e-bb94-189835bb6d7f
+// 2.1-------
+{
+    "currentUser": {
+      "userId": 1
+    },
+    "currentUserFollower": {
+      "userId":4 
+    }
+}
+// 2.2---------
+{
+    "currentUser": {
+      "userId": 2  // try 4
+    },
+    "currentUserFollower": {
+      "userId":4 
+    }
+}
+
+// 2.3 twist bcz 47 not valid but he taking generated value
+{
+    "currentUser": {
+      "userId": 5
+    },
+    "currentUserFollower": {
+      "userId":47
+    }
+}
+
+// 2.4---------- si it;s mean its taking by defalult we dont need commenter id
+{
+    "currentUser": {
+      "userId": 3
+    }
+}
+
+// ############### Step -- 9 -- unfollow -- User Class -->  one row delete in Follow table
+// try whose not follwed by riya, wrong email, anything try
+followId --> 5
+followerEmail --> riya@blogsuser.com
+followerToken --> b3e40686-e9e1-474e-bb94-189835bb6d7f
+
+// ############### Step -- 10 -- Post -- User Class -->  get all post by email
+email --> faisal@blogsuser.com
+token --> 99f7e18d-52b7-4286-a88e-4bcbfaa1c81b
+
+// 2
+riya@blogsuser.com
+b3e40686-e9e1-474e-bb94-189835bb6d7f
+
+// ############### Step -- 11 -- Update Post -- User Class -->  update a particualar post
+// email , token . post id
+
+{
+    "postContent": "My World",
+    "postTitle": "Sports",
+    "postCaption": "Game",
+    "postLocation": "Chennai",
+    "postType": "IMAGE"
+}
+
+// ############### Step -- 12-- Update Comment -- User Class -->  update a particualar Comment
+// email , token 
+
+a5a51ad9-b48b-4653-915a-5fa8d622451d
