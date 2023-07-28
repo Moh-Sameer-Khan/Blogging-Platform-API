@@ -45,4 +45,9 @@ public class User {
 
     @JsonProperty(access = JsonProperty.Access.READ_ONLY) // hide this in json but not in database table column
     private boolean verifiedAccount;
+
 }
+
+
+
+

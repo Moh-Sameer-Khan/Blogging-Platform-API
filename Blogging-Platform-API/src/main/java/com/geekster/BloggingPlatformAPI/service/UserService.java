@@ -107,7 +107,7 @@ public class UserService {
                 authenticationService.saveAuthToken(authToken);
 
 //                now I Want to send OTP on Email --> Email Integration
-                EmailHandler.sendEMail("mskhanm1819@gmail.com", "Blogs Sign-In Testing!!!", authToken.getTokenValue());;
+                EmailHandler.sendEMail(existingUser.getUserEmail(), "Blogs Sign-In Testing!!!", authToken.getTokenValue());;
 
                 return "Token Sent to your Email!!!";
 

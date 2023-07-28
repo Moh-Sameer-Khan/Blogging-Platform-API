@@ -30,7 +30,7 @@ public class UserController {
 
     //sign up particular Blogs user
     @PostMapping("blogs/user/signUp")
-    public SignUpOutput signUpBlogsUser(@RequestBody User user)
+    public SignUpOutput signUpBlogsUser(@RequestBody @Valid User user)
     {
         return userService.signUpBlogsUser(user);
     }
@@ -117,7 +117,7 @@ public class UserController {
     //follow functionality in Blogs
 
     @PostMapping("blogs/follow")
-    public String followUser(@RequestBody Follow follow, @RequestParam @Valid String followerEmail, @RequestParam String followerToken)
+    public String followUser(@RequestBody @Valid Follow follow, @RequestParam @Valid String followerEmail, @RequestParam String followerToken)
     {
         boolean authenticateResult = authenticationService.authenticate(followerEmail, followerToken);
         if(authenticateResult) {
